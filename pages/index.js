@@ -21,7 +21,7 @@ export default function Home({ products }) {
 
                 {/* Products grid start */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-14 px-5 md:px-0">
-                    {/* {products?.data?.length > 0 ? (
+                    {products?.data?.length > 0 ? (
                         products.data.map((product) => (
                             <ProductCard key={product.id} data={product} />
                         ))
@@ -29,13 +29,13 @@ export default function Home({ products }) {
                         <p className="text-center col-span-full text-lg text-gray-500">
                             No products available.
                         </p>
-                    )} */}
+                    )}
+                    {/* <ProductCard />
                     <ProductCard />
-                    <ProductCard />
                     <ProductCard /> 
                     <ProductCard /> 
                     <ProductCard /> 
-                    <ProductCard /> 
+                    <ProductCard />  */}
                 </div>
                 {/* Products grid end */}
             </Wrapper>
@@ -59,3 +59,4 @@ export async function getStaticProps() {
         };
     }
 }
+
